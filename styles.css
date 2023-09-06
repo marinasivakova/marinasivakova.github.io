@@ -1,10 +1,12 @@
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   overflow:hidden;
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
@@ -26,11 +28,15 @@ ul {
 }
 
 .page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 88px;
   width: 100%;
   padding: 0 16px;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   border-bottom: 1px solid #D9FFF5;
   background-color: #FFFFFF;
 }
@@ -45,9 +51,15 @@ ul {
 }
 
 .front-header-half, .back-header-half {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
@@ -61,17 +73,25 @@ ul {
 }
 
 .page-title{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 24px;
   height: 40px;
 }
 
 .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   justify-self: start;
-  align-self: start;
+  -ms-flex-item-align: start;
+      align-self: start;
   height: 40px;
   line-height: 40px;
   margin-bottom: 24px;
@@ -95,13 +115,20 @@ ul {
 }
 
 .page-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100vw;
   height: 40px;
   margin: 24px 0px 24px 16px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap:nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap:nowrap;
+      flex-wrap:nowrap;
   overflow-x: scroll;
   scrollbar-width: none; /* hiding scrollbar on firefox 64*/
   color: #7E7E82;
@@ -167,12 +194,18 @@ ul {
 }
 
 .read-more-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 16px 0;
   width: 132px;
   height: 24px;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   white-space: nowrap;
 }
 
@@ -205,7 +238,9 @@ ul {
 
   .page-header {
     padding: 0 24px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .front-header-half, .back-header-half {
@@ -221,6 +256,8 @@ ul {
   }
 
   .contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0 35px;
     line-height: 20px;
@@ -255,7 +292,8 @@ ul {
 
   .page-menu-list {
     padding: 0;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-left: 33px;
   }
 
@@ -264,12 +302,18 @@ ul {
   }
 
   .page-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     padding-left: 0;
     margin: 0;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .contact-button__description, .checkstatus__description {
@@ -277,16 +321,23 @@ ul {
   }
 
   .contact-button.pc-view, .checkstatus.pc-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: 32px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
   }
 
   .checkstatus-and-contact-buttons-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-self: end;
-    align-self: start;
+    -ms-flex-item-align: start;
+        align-self: start;
   }
 
 
@@ -296,6 +347,8 @@ ul {
   }
 
   .contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 24px 0 0 35px;
     line-height: 20px;
