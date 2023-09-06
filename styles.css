@@ -19,6 +19,12 @@ body {
   background-color: #F8F8F8;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 .page-header {
   display: flex;
   height: 88px;
@@ -88,12 +94,11 @@ body {
   border-bottom-right-radius: 100%;
 }
 
-.page-menu {
+.page-menu-list {
   display: flex;
   width: 100vw;
   height: 40px;
-  margin: 24px 0;
-  padding: 12px 0 12px -10px;
+  margin: 24px 0px 24px 16px;
   align-items: center;
   justify-content: flex-start;
   flex-wrap:nowrap;
@@ -106,25 +111,24 @@ body {
   white-space: nowrap;
 }
 
-.page-menu::-webkit-scrollbar {
+.page-menu-list::-webkit-scrollbar {
   display: none;
 }
 
-.page-menu__page-link {
+.page-menu-list__page-link {
   width: 246px;
-  margin: 0;
   padding: 8px 15px;
   font-size: inherit;
   line-height: inherit;
   letter-spacing: inherit;
 }
 
-.page-menu__page-link:active, .page-menu__page-link:hover, .page-menu__page-link:link, .page-menu__page-link:visited {
+.page-menu-list__page-link:active, .page-menu-list__page-link:hover, .page-menu-list__page-link:link, .page-menu-list__page-link:visited {
   text-decoration: none;
   color: #7E7E82;
 }
 
-.page-menu__page-link--current {
+.page-menu-list__page-link--current {
   text-decoration: none;
   border: 2px solid #B8FFEC;
   background-color: #FFFFFF;
@@ -222,7 +226,7 @@ body {
     line-height: 20px;
   }
 
-  .page-menu {
+  .page-menu-list {
     margin-left: 24px;
   }
 
@@ -249,7 +253,7 @@ body {
     padding: 42px 31px 31px 0;
   }
 
-  .page-menu {
+  .page-menu-list {
     padding: 0;
     flex-wrap: wrap;
     margin-left: 33px;
