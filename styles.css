@@ -205,7 +205,7 @@ ul {
   white-space: nowrap;
 }
 
-.title-buttons-container__contact-button--mid-bold, .title-buttons-container__checkstatus--mid-bold {
+.title-buttons-container-contact-button--mid-bold, .title-buttons-container-checkstatus--mid-bold {
   font-weight: 500;
 }
 
@@ -312,11 +312,11 @@ ul {
             align-items: center;
   }
 
-  .title-buttons-container__contact-button__description, .title-buttons-container__checkstatus__description {
+  .title-buttons-container-contact-button__description, .title-buttons-container-checkstatus__description {
     margin-right: 10px;
   }
 
-  .title-buttons-container__contact-button.pc-view, .title-buttons-container__checkstatus.pc-view {
+  .title-buttons-container-contact-button.pc-view, .title-buttons-container-checkstatus.pc-view {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
