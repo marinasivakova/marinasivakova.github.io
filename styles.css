@@ -27,7 +27,7 @@ ul {
   margin: 0;
 }
 
-.page-header {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,16 +41,16 @@ ul {
   background-color: #FFFFFF;
 }
 
-.header-item, .menu-button {
+.header-item {
   margin: 10px 5px 10px 10px;
   padding: 0;
 }
 
-.menu-button {
+.header-item--menu-button {
   margin-left: 0;
 }
 
-.front-header-half, .back-header-half {
+.header-left-half, .header-right-half {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,11 +68,7 @@ ul {
   height: 51px;
 }
 
-.contact-button .checkstatus {
-  margin: auto 0;
-}
-
-.page-title{
+.title{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +110,7 @@ ul {
   border-bottom-right-radius: 100%;
 }
 
-.page-menu-list {
+.menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,11 +134,11 @@ ul {
   white-space: nowrap;
 }
 
-.page-menu-list::-webkit-scrollbar {
+.menu-list::-webkit-scrollbar {
   display: none;
 }
 
-.page-menu-list__page-link {
+.menu-list__link {
   width: 246px;
   padding: 8px 15px;
   font-size: inherit;
@@ -150,19 +146,19 @@ ul {
   letter-spacing: inherit;
 }
 
-.page-menu-list__page-link:active, .page-menu-list__page-link:hover, .page-menu-list__page-link:link, .page-menu-list__page-link:visited {
+.menu-list__link:active, .menu-list__link:hover, .menu-list__link:link, .menu-list__link:visited {
   text-decoration: none;
   color: #7E7E82;
 }
 
-.page-menu-list__page-link--current {
+.menu-list__link--current {
   text-decoration: none;
   border: 2px solid #B8FFEC;
   background-color: #FFFFFF;
   border-radius: 6px;
 }
 
-.menu-button--round {
+.header-item--menu-button--round {
   background: transparent;
   border: transparent;
 }
@@ -177,14 +173,14 @@ ul {
   display: inline-block;
   height: 322px;
 }
-.text {
+.contents-text {
   margin: 0 16px;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
 }
 
-.text__paragraph {
+.contents-text__paragraph {
   margin-top: 0;
 }
 
@@ -193,7 +189,7 @@ ul {
   width: 100vw;
 }
 
-.read-more-container {
+.contents-read-more-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,18 +205,18 @@ ul {
   white-space: nowrap;
 }
 
-.contact-button--mid-bold, .checkstatus--mid-bold {
+.title-buttons-container__contact-button--mid-bold, .title-buttons-container__checkstatus--mid-bold {
   font-weight: 500;
 }
 
-.read-more-container__text--mid-bold {
+.contents-read-more-container__text--mid-bold {
   margin-left: 8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
 }
-.read-more-container__symbol{
+.contents-read-more-container__symbol{
   height: 24px;
 }
 
@@ -236,22 +232,22 @@ ul {
     display: initial;
   }
 
-  .page-header {
+  .header {
     padding: 0 24px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
 
-  .front-header-half, .back-header-half {
+  .header-left-half, .header-right-half {
     width: auto;
   }
 
-  .front-header-half {
+  .header-left-half {
     width: 20%;
   }
 
-  .back-header-half {
+  .header-right-half {
     width: 40%;
   }
 
@@ -263,7 +259,7 @@ ul {
     line-height: 20px;
   }
 
-  .page-menu-list {
+  .menu-list {
     margin-left: 24px;
   }
 
@@ -273,7 +269,7 @@ ul {
     margin-left: 24px;
   }
   
-  .text {
+  .contents-text {
     margin-top: 0;
     padding-top: 0; 
     vertical-align: top;
@@ -290,18 +286,18 @@ ul {
     padding: 42px 31px 31px 0;
   }
 
-  .page-menu-list {
+  .menu-list {
     padding: 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-left: 33px;
   }
 
-  .page-header {
+  .header {
     display: none;
   }
 
-  .page-title {
+  .title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -316,11 +312,11 @@ ul {
             align-items: center;
   }
 
-  .contact-button__description, .checkstatus__description {
+  .title-buttons-container__contact-button__description, .title-buttons-container__checkstatus__description {
     margin-right: 10px;
   }
 
-  .contact-button.pc-view, .checkstatus.pc-view {
+  .title-buttons-container__contact-button.pc-view, .title-buttons-container__checkstatus.pc-view {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -331,7 +327,7 @@ ul {
     text-align: center;
   }
 
-  .checkstatus-and-contact-buttons-container {
+  .title-buttons-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -358,7 +354,7 @@ ul {
     width: 531px;
     margin-left: 24px;
   }
-  .text {
+  .contents-text {
     margin-top: 0;
     padding-top: 0;
   }
