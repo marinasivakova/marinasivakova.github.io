@@ -1,103 +1,110 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>Услуги и сервисы</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        <meta name="keywords" content="CPS, ремонт, Dell">
-        <meta name="description" content="Услуги и сервисы центра по ремонту 'CPS'">
-    </head>
-    <body>
-        <header class="header">
-            <div class="header-left-half">
-              <div id="menu-button" class="header-item header-item--menu-button">
-                <button class="header-item--menu-button header-item--menu-button--round">
+
+<head>
+    <title>Услуги и сервисы</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="CPS, ремонт, Dell">
+    <meta name="description" content="Услуги и сервисы центра по ремонту 'CPS'">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div id="menu-button" class="header__item header__item-menu">
+                <button class="header__item-menu btn--round">
                     <img src="img/menu-button.png" alt="Иконка меню">
                 </button>
-              </div>
-              <div class="header-item header-item--vertical-line mid-view"></div>
-                <img class="header-item header-item--logo" src="img/logo.png" alt="Логотип CPS">
             </div>
-            <div class="header-item header-item--vertical-line mobile-view"></div>
-            <div class="header-right-half">
-                <div class="header-item mid-view">
-                    <img src="img/768/call.png" alt="Позвоните нам">
-                </div>
-             <div class="header-item mid-view">
+            <div class="header__item header__splitter mid-view"></div>
+            <img class="header__item header__item-logo" src="img/logo.png" alt="Логотип CPS">
+        </div>
+        <div class="header__item header__item-splitter mobile-view"></div>
+        <div class="header__wrapper">
+            <div class="header__item header__item-call mid-view">
+                <img src="img/768/call.png" alt="Позвоните нам">
+            </div>
+            <div class="header__item header__item-chat mid-view">
                 <img src="img/768/chat.png" alt="Напишите нам">
-             </div>
-                <div class="header-item mid-view">
-                    <img src="img/768/profile.png" alt="Личный профиль">
+            </div>
+            <div class="header__item header__item-profile mid-view">
+                <img src="img/768/profile.png" alt="Личный профиль">
+            </div>
+            <div class="header__item header__item-splitter mid-view"></div>
+            <div class="header__item header__item-contact">
+                <img src="img/contact-logo.png" alt="Свяжитесь с нами">
+            </div>
+            <div class="header__item header__item-status">
+                <img src="img/checkstatus.png" alt="Проверить статус">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="title">
+            <div class="title__wrapper">
+                <div class="title__highlight"></div>
+                <div>
+                    <h1 id="services" class="title__text title__text-services">
+                        Услуги и сервисы
+                    </h1>
                 </div>
-                <div class="header-item header-item--vertical-line mid-view"></div>
-                <div class="header-item">
+            </div>
+            <div class="title__wrapper pc-view">
+                <div class="title__btn btn text--mid-bold pc-view">
+                    <span class="btn__description">Оставить заявку</span>
                     <img src="img/contact-logo.png" alt="Свяжитесь с нами">
                 </div>
-                <div class="header-item">
+                <div class="title__btn btn text--mid-bold pc-view">
+                    <span class="btn__description">Статус ремонта</span>
                     <img src="img/checkstatus.png" alt="Проверить статус">
                 </div>
             </div>
-        </header>
-        <main>
-            <div class="title">
-                <div class="title-container">
-                    <div class="title-container__highlight"></div>
-                    <div>
-                        <h1 id="services" class="title-container__text">
-                        Услуги и сервисы
-                        </h1>
-                    </div>
-                </div>
-                <div class="title-buttons-container pc-view">
-                    <div class="title-buttons-container-contact-button title-buttons-container-contact-button--mid-bold pc-view">
-                        <span class="title-buttons-container-contact-button__description">Оставить заявку</span>
-                        <img src="img/contact-logo.png" alt="Свяжитесь с нами">
-                    </div>
-                    <div class="title-buttons-container-checkstatus title-buttons-container-checkstatus--mid-bold pc-view">
-                        <span class="title-buttons-container-checkstatus__description">Статус ремонта</span>
-                        <img src="img/checkstatus.png" alt="Проверить статус">
-                    </div>
-                </div>
-            </div>
-                <nav class="menu">
-                    <ul class="menu-list">
-                        <li>
-                            <a class="menu-list__link menu-list__link--current" href="#services">Ремонтируемые бренды</a>
-                        </li>
-                        <li>
-                            <a class="menu-list__link" href="#">Ремонтируемые устройства</a>
-                        </li>
-                        <li>
-                            <a class="menu-list__link" href="#">Цены на услуги</a>
-                        </li>
-                        <li>
-                            <a class="menu-list__link" href="#">Адреса сервисных центров</a>
-                        </li>
-                        <li>
-                            <a class="menu-list__link" href="#">Специальные цены</a>
-                        </li>
-                        <li>
-                            <a class="menu-list__link" href="#">Отзывы</a>
-                        </li>
-                    </ul>
-                </nav>
-            <section class="contents">
-                <article class="contents-text">
-                <p class="contents-text__paragraph">
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+        </div>
+        <nav class="menu">
+            <ul class="menu__list list">
+                <li>
+                    <a class="list__link list__link--current" href="#services">Ремонтируемые бренды</a>
+                </li>
+                <li>
+                    <a class="list__link" href="#">Ремонтируемые устройства</a>
+                </li>
+                <li>
+                    <a class="list__link" href="#">Цены на услуги</a>
+                </li>
+                <li>
+                    <a class="list__link" href="#">Адреса сервисных центров</a>
+                </li>
+                <li>
+                    <a class="list__link" href="#">Специальные цены</a>
+                </li>
+                <li>
+                    <a class="list__link" href="#">Отзывы</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="contents">
+            <article class="contents__text text">
+                <p class="text__p">
+                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+                    отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                 </p>
-                <p class="contents-text__paragraph pc-view mid-view">
-                    <span class="pc-view mid-view" style="margin: 0">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,</span><span class="pc-view" style="margin: 0"> что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
+                <p class="text__p pc-view mid-view">
+                    <span class="pc-view mid-view" style="margin: 0">Мы успешно работаем с 1992 года и заслужили
+                        репутацию надежного партнера,</span><span class="pc-view" style="margin: 0"> что подтверждает
+                        большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                        и, в свою очередь, советуют нас родным и близким.</span>
                 </p>
-                <div class="contents-read-more-container">
-                    <img class="contents-read-more-container__symbol" src="img/read-more-symbol.png" alt="Читать далее">
-                    <span class="contents-read-more-container__text contents-read-more-container__text--mid-bold">Читать далее</span>
+                <div class="text__read-more read-more">
+                    <img class="read-more__symbol" src="img/read-more-symbol.png" alt="Читать далее">
+                    <span class="read-more__text text--mid-bold">Читать далее</span>
                 </div>
             </article>
-                <img class="contents__image" src="img/services-page/img.png" alt="Две таблички, табличка справа - логотип CPS, слева - часы работы сервисного центра (понедельник-суббота: 10:00-19:00, воскресенье: выходной). ">
-            </section>
-        </main>
-    </body>
+            <img class="contents__image" src="img/services-page/img.png"
+                alt="Две таблички, табличка справа - логотип CPS, слева - часы работы сервисного центра (понедельник-суббота: 10:00-19:00, воскресенье: выходной). ">
+        </section>
+    </main>
+</body>
 </html>
