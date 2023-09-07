@@ -166,7 +166,7 @@ ul {
 
 .btn--round {
   background: transparent;
-  border: transparent;
+  border: none;
 }
 
 .header__splitter {
