@@ -97,6 +97,16 @@ body {
     display: none;
 }
 
+.gallery__blur {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    width: 24px;
+    height: 100%;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+}
+
 @media (max-width: 767px) {
     .swiper {
         max-height: 100px;
