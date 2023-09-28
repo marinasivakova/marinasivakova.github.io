@@ -196,7 +196,7 @@ ul {
   width: 100vw;
 }
 
-.text__read-more {
+.read-more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
