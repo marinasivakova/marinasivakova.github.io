@@ -1,5 +1,5 @@
 # marinasivakova.github.io
-## https://marinasivakova.github.io/- github pages
+## https://marinasivakova.github.io  github pages
 ## index.html - main file
 ## styles.css - main stylesheet
 ## side-menu.html - side-menu block
