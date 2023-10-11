@@ -1,0 +1,200 @@
+$color_1: #7e7e82;
+$color_2: #ffffff;
+$color_3: #f8f8f8;
+$accent_color: #ff3e79;
+$border_1: #eaeaea;
+$border_2: #d9fff5;
+
+:root {
+  --swiper-pagination-color: #b5b6bc;
+  --swiper-pagination-bullet-inactive-color: #dddddd;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-vertical-gap: 12px;
+}
+.prices {
+  height: 100%;
+
+  .prices__title {
+    display: inline-block;
+    padding: 16px;
+    width: 100%;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from($color_3),
+      color-stop(98.61%, $color_2)
+    );
+    background: -o-linear-gradient(left, $color_3 0%, $color_2 98.61%);
+    background: linear-gradient(90deg, $color_3 0%, $color_2 98.61%);
+    margin: 12px;
+    border-top: 1px solid $border_2;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $color_1;
+    text-transform: uppercase;
+  }
+}
+.swiper--title {
+  display: inline-block;
+  padding: 16px;
+  width: 100%;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from($color_3),
+    color-stop(98.61%, $color_2)
+  );
+  background: -o-linear-gradient(left, $color_3 0%, $color_2 98.61%);
+  background: linear-gradient(90deg, $color_3 0%, $color_2 98.61%);
+  margin: 12px;
+  border-top: 1px solid $border_2;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $color_1;
+  text-transform: uppercase;
+}
+.prices__swiper {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+.prices__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: $color_2;
+  margin: 0 0 46px 8px;
+  padding: 16px;
+  width: 260px;
+  height: 220px;
+  border-radius: 5px;
+}
+.table__title {
+  padding: 16px;
+}
+.offer-link {
+  font-weight: bolder;
+  .offer-link__btn {
+    color: $accent_color;
+    display: inline-block;
+    width: 24px;
+    height: 20px;
+  }
+  cursor: pointer;
+}
+.block__title {
+  color: $color_1;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+.table__title {
+  color: $color_1;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+.block__tile {
+  margin-bottom: 8px;
+}
+.tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.tile__text {
+  display: inline-block;
+}
+.tile__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 119px;
+  background-color: $accent_color;
+  border-radius: 20px;
+  padding: 6px;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-align: right;
+  font-weight: bold;
+  color: $color_2;
+  cursor: pointer;
+}
+.table__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 119px;
+  background-color: $accent_color;
+  border-radius: 20px;
+  padding: 6px;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-align: right;
+  font-weight: bold;
+  color: $color_2;
+  cursor: pointer;
+}
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
+}
+.prices__table {
+  display: none;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    margin: 0 24px;
+    border-radius: 5px;
+  }
+  .table__tile {
+    vertical-align: middle;
+    padding: 16px;
+    background-color: $color_2;
+    border-top: 1px solid $border_1;
+  }
+  .table__btn-wrapper {
+    padding: 16px;
+    background-color: $color_2;
+    border-top: 1px solid $border_1;
+  }
+  .tile--no-border {
+    border-width: 0;
+  }
+}
+.disclaimer {
+  margin: 0 16px;
+}
+.disclaimer__text {
+  display: inline-block;
+  margin-bottom: 12px;
+  @media (min-width: 760px) {
+    max-width: 50%;
+  }
+}
