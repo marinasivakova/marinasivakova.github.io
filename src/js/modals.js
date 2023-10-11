@@ -40,7 +40,12 @@ function modalChecker(block) {
 function closeByClick(block, mainPage, queryTag) {
   if (!modalChecker(block)) {
     window.addEventListener('click', function (evt) {
-      if (!(evt.target.nodeName == 'IMG')) {
+      if (
+        !(
+          evt.target.nodeName == 'IMG' &&
+          evt.target.tagName.toUpperCase() == 'INPUT'
+        )
+      ) {
         mainPage.style.opacity = 1
         block.classList.add(queryTag + '--hidden')
       }
