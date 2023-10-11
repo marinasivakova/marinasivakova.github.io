@@ -18,6 +18,7 @@ $border_2: #d9fff5;
     display: inline-block;
     padding: 16px;
     width: 100%;
+    background: -o-linear-gradient(left, $color_3 0%, $color_2 98.61%);
     background: -webkit-gradient(
       linear,
       left top,
@@ -25,7 +26,6 @@ $border_2: #d9fff5;
       from($color_3),
       color-stop(98.61%, $color_2)
     );
-    background: -o-linear-gradient(left, $color_3 0%, $color_2 98.61%);
     background: linear-gradient(90deg, $color_3 0%, $color_2 98.61%);
     margin: 12px;
     border-top: 1px solid $border_2;
@@ -40,6 +40,7 @@ $border_2: #d9fff5;
   display: inline-block;
   padding: 16px;
   width: 100%;
+  background: -o-linear-gradient(left, $color_3 0%, $color_2 98.61%);
   background: -webkit-gradient(
     linear,
     left top,
@@ -47,7 +48,6 @@ $border_2: #d9fff5;
     from($color_3),
     color-stop(98.61%, $color_2)
   );
-  background: -o-linear-gradient(left, $color_3 0%, $color_2 98.61%);
   background: linear-gradient(90deg, $color_3 0%, $color_2 98.61%);
   margin: 12px;
   border-top: 1px solid $border_2;
