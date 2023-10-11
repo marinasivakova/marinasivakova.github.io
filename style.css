@@ -132,6 +132,8 @@ html {
     list-style-type: none;
     padding: 0;
     margin: 0; }
+  html a {
+    text-decoration: none; }
   html a:-webkit-any-link {
     text-decoration: none; }
 
