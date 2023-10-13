@@ -44,6 +44,7 @@ body {
   letter-spacing: -0.2px;
   text-align: left;
   background-color: $background-color_1;
+  overflow-x: hidden;
 }
 .main-page {
   @media (min-width: 1024px) {
@@ -68,6 +69,7 @@ body {
   .title__btn {
     display: none;
     @media (min-width: 1024px) {
+      cursor: pointer;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -84,16 +86,22 @@ body {
     }
   }
 }
+
+.title__wrapper--buttons {
+  justify-self: end;
+}
+
 .title {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   margin-top: 24px;
   height: 40px;
+  width: 80%;
   @media (min-width: 1024px) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    width: 90%;
     padding-left: 0;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -101,6 +109,9 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+  @media (min-width: 1250px) {
+    width: 95%;
   }
   .title__text {
     font-weight: bold;
@@ -113,7 +124,7 @@ body {
 
 .services {
   @media (min-width: 1024px) {
-    padding: 42px 120px 42px 0;
+    padding: 42px 0;
   }
   .services__title {
     @media (min-width: 1024px) {
@@ -229,6 +240,7 @@ body {
 .btn--round {
   background: transparent;
   border: transparent;
+  cursor: pointer;
 }
 .contents {
   display: inline-block;
@@ -283,6 +295,23 @@ body {
     margin-top: 0;
   }
 }
+
+.p--mobile {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.p--tablet {
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.p--pc {
+  display: none;
+}
+
 .read-more {
   display: -webkit-box;
   display: -ms-flexbox;

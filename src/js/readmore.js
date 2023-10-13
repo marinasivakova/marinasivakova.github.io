@@ -11,9 +11,6 @@ let paragraphs = text.querySelectorAll('.text__p')
 let spans = paragraphs[1].querySelectorAll('span')
 let readMoreTextButton = text.querySelector('.text__read-more')
 
-let mobile = window.matchMedia('(min-width: 0px) and (max-width: 767px)')
-let tablet = window.matchMedia('(min-width: 768px) and (max-width: 1024px)')
-
 function readMoreListener(readMore, overflow, swiperBlock) {
   swiperBlock.style.height = overflow + 'px'
   readMore.addEventListener('click', function () {
@@ -31,48 +28,44 @@ function readMoreListener(readMore, overflow, swiperBlock) {
   })
 }
 
-function readMoreText() {
-  if (mobile.matches) {
-    paragraphs[1].style.display = 'none'
-  } else if (tablet.matches) {
-    spans[1].style.display = 'none'
-  }
-}
-
 function showMoreText(btn) {
   btn.addEventListener('click', function () {
-    if (btn.querySelector('span').textContent == 'Скрыть') {
-      if (mobile.matches) {
-        paragraphs[1].style.display = 'none'
-      } else if (tablet.matches) {
-        spans[1].style.display = 'none'
-      }
+    if (btn.querySelector('span').textContent === 'Скрыть') {
+      paragraphs[1].classList.add('p--mobile')
+      spans[1].classList.add('p--tablet')
+      spans[2].classList.add('p--pc')
       btn.querySelector('img').src = '././img/read-more-symbol.svg'
       btn.querySelector('img').alt = 'Читать далее'
       btn.querySelector('span').textContent = 'Читать далее'
       return
+    } else {
+      paragraphs[1].classList.remove('p--mobile')
+      spans[1].classList.remove('p--tablet')
+      spans[2].classList.remove('p--pc')
+      btn.querySelector('img').src = '././img/read-less-symbol.svg'
+      btn.querySelector('img').alt = 'Скрыть'
+      btn.querySelector('span').textContent = 'Скрыть'
+      return
     }
-    if (mobile.matches) {
-      paragraphs[1].style.display = 'initial'
-    } else if (tablet.matches) {
-      spans[1].style.display = 'initial'
-    }
-    btn.querySelector('img').src = '././img/read-less-symbol.svg'
-    btn.querySelector('img').alt = 'Скрыть'
-    btn.querySelector('span').textContent = 'Скрыть'
   })
 }
 
+let mobile = window.matchMedia('(min-width: 0px) and (max-width: 767px)')
+let tablet = window.matchMedia('(min-width: 768px) and (max-width: 1024px)')
+
+showMoreText(readMoreTextButton)
+readMoreListener(typesReadMore, overflowTypesPx, types)
+readMoreListener(brandsReadMore, overflowGalleryPx, brands)
+
+/*
 window.addEventListener('load', function () {
   readMoreListener(typesReadMore, overflowTypesPx, types)
   readMoreListener(brandsReadMore, overflowGalleryPx, brands)
-  readMoreText()
   showMoreText(readMoreTextButton)
 })
 
 window.addEventListener('resize', function () {
+  showMoreText(readMoreTextButton)
   readMoreListener(typesReadMore, overflowTypesPx, types)
   readMoreListener(brandsReadMore, overflowGalleryPx, brands)
-  readMoreText()
-  showMoreText(readMoreTextButton)
-})
+})*/

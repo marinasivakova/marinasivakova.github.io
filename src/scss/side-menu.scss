@@ -46,6 +46,7 @@ $shadow_2: #454f7e05;
       }
     }
     .menu-header__btn {
+      cursor: pointer;
       > img {
         display: inline-block;
       }
@@ -114,6 +115,7 @@ $shadow_2: #454f7e05;
   text-decoration: none;
   font-weight: 500;
   color: $link_color;
+  cursor: pointer;
   &:active {
     color: $link_color;
   }

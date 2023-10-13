@@ -64,11 +64,11 @@ let nonBlock = document.querySelector('.main-page')
 let checkStatusButton = document.querySelectorAll(
   '.header__item-call, .btns__call'
 )
-let statusBlock = document.querySelector('.modal-feedback')
+let statusBlock = document.querySelector('.modal-call')
 let closeStatus = statusBlock.querySelector('.btn__cancel')
 
 let contactButton = document.querySelectorAll('.btns__chat, .header__item-chat')
-let contactBlock = document.querySelector('.modal-call')
+let contactBlock = document.querySelector('.modal-feedback')
 let closeContact = contactBlock.querySelector('.btn__cancel')
 
 modal(menuButton, closeMenu, menuBlock, nonBlock, 'side-menu')
