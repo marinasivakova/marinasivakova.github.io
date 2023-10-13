@@ -2,6 +2,8 @@ $color_1: #7e7e82;
 $border_1: #d9fff5;
 
 .footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 24px 12px;
   border-top: 1px solid $border_1;
   color: $color_1;
