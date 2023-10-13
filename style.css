@@ -155,7 +155,8 @@ body {
   line-height: 24px;
   letter-spacing: -0.2px;
   text-align: left;
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  overflow-x: hidden; }
 
 @media (min-width: 1024px) {
   .main-page {
@@ -175,6 +176,7 @@ body {
     display: none; }
     @media (min-width: 1024px) {
       .title__wrapper .title__btn {
+        cursor: pointer;
         display: flex; } }
   @media (min-width: 1024px) {
     .title__wrapper:last-child {
@@ -182,18 +184,25 @@ body {
       justify-self: end;
       align-self: start; } }
 
+.title__wrapper--buttons {
+  justify-self: end; }
+
 .title {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   margin-top: 24px;
-  height: 40px; }
+  height: 40px;
+  width: 80%; }
   @media (min-width: 1024px) {
     .title {
       display: flex;
-      width: 100%;
+      width: 90%;
       padding-left: 0;
       justify-content: space-between;
       align-items: center; } }
+  @media (min-width: 1250px) {
+    .title {
+      width: 95%; } }
   .title .title__text {
     font-weight: bold;
     font-size: 28px;
@@ -203,7 +212,7 @@ body {
 
 @media (min-width: 1024px) {
   .services {
-    padding: 42px 120px 42px 0; } }
+    padding: 42px 0; } }
 
 @media (min-width: 1024px) {
   .services .services__title {
@@ -291,7 +300,8 @@ body {
 
 .btn--round {
   background: transparent;
-  border: transparent; }
+  border: transparent;
+  cursor: pointer; }
 
 .contents {
   display: inline-block;
@@ -338,6 +348,17 @@ body {
       padding-top: 0; } }
   .text .text__p {
     margin-top: 0; }
+
+@media (max-width: 767px) {
+  .p--mobile {
+    display: none; } }
+
+@media (max-width: 1024px) {
+  .p--tablet {
+    display: none; } }
+
+.p--pc {
+  display: none; }
 
 .read-more {
   display: flex;
@@ -827,8 +848,10 @@ body {
     .menu-header .btn__cancel {
       display: none; } }
   @media (min-width: 1024px) {
-      .menu-header .menu-header__btn > img {
-        display: inline-block; } }
+      .menu-header .menu-header__btn {
+        cursor: pointer; }
+        .menu-header .menu-header__btn > img {
+          display: inline-block; } }
   .menu-header .menu-list__highlight {
     height: 32px; }
   .menu-header .menu-list__link {
@@ -874,7 +897,8 @@ body {
   margin-left: 5px;
   text-decoration: none;
   font-weight: 500;
-  color: black; }
+  color: black;
+  cursor: pointer; }
   .lang-options__option:active {
     color: black; }
   .lang-options__option:hover {
